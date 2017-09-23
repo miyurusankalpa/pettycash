@@ -9,6 +9,44 @@ using namespace std;
 
 int main()
 {	
+
+	cout << "Enter the number of your role to login:" << endl;
+	cout <<  "Staff - 1\nPetty Cashier - 2\nManager - 3\nAdmin - 4" << endl;
+
+	int userVar;
+	cin >> userVar;
+
+	switch (userVar) {
+	case 1: {
+		cout << "Logged in as Staff" << endl;
+		break;
+		}
+	case 2: {
+		cout << "Logged in as Petty Cashier" << endl;
+		break;
+		}
+	case 3: {
+		cout << "Logged in as Petty Cashier" << endl;
+		break;
+	}
+	case 4: {
+		cout << "Logged in as Petty Cashier" << endl;
+		break;
+	}
+	default: {
+		cout << "Invalid number" << endl;
+		return 0;
+		}
+	}
+
+	if (userVar == 1) {
+		cout << "Please enter your account PIN" << endl;
+		int acPIN;
+		cin >> acPIN;
+
+	}
+
+
 	fund fund1;
 
 	fund1.AddtoFund(1000);

@@ -1,3 +1,4 @@
 language: cpp
 compiler: gcc
 before_install: cd pettycash
+script: gcc pettycash.cpp -opettycash

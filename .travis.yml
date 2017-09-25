@@ -1,4 +1,6 @@
 language: cpp
 compiler: gcc
-before_install: cd pettycash
+before_install: 
+- cd pettycash
+- wget https://raw.githubusercontent.com/EddieRingle/portaudio/master/src/hostapi/wasapi/mingw-include/sdkddkver.h
 script: gcc pettycash.cpp -opettycash

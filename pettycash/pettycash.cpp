@@ -11,7 +11,7 @@ int main()
 {	
 
 	cout << "Enter the number of your role to login:" << endl;
-	cout <<  "Staff - 1\nPetty Cashier - 2\nManager - 3\nAdmin - 4" << endl;
+	cout <<  "Staff -\t1\nPetty Cashier -\t2\nManager -\t3\nAdmin -\t4" << endl;
 
 	int userVar;
 	cin >> userVar;
@@ -40,6 +40,11 @@ int main()
 	}
 
 	if (userVar == 1) {
+
+		cout << "Please enter your account No" << endl;
+		int acNo;
+		cin >> acNo;
+
 		cout << "Please enter your account PIN" << endl;
 		int acPIN;
 		cin >> acPIN;

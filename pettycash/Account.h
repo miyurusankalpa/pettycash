@@ -6,7 +6,7 @@ private:
 	float accountBal;
 	int accountPin;
 public:
-	Account();
+	Account(int acno);
 	~Account();
 };
 

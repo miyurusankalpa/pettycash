@@ -1,9 +1,10 @@
 #include "stdafx.h"
 #include "Account.h"
 
-
-Account::Account()
+Account::Account(int acno)
 {
+	accountID = acno;
+	accountBal = 0;
 }
 
 

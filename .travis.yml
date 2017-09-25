@@ -1,6 +1,6 @@
 language: cpp
-compiler: gcc
+compiler: g++
 before_install: cd pettycash
 script: 
-- sed '/#include "stdafx.h"/d;' -i pettycash.cpp
-- gcc pettycash.cpp -opettycash
+- find *.cpp -type f -exec sed -i '/#include "stdafx.h"/d;'  {} \;
+- g++ pettycash.cpp Account.cpp PettyCashier.cpp Staff.cpp Manager.cpp  Administrator.cpp fund.cpp 

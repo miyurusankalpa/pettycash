@@ -6,14 +6,15 @@
    ------------------------+------------------
    View monthly reports.   |	Account
    View remaining funds.   |	Staff
-   Change login PIN.	   |			*/
+   Change login PIN.       |                    */
 
 #include "stdafx.h"
 #include "Manager.h"
 
 
-Manager::Manager()
+Manager::Manager(int PIN)
 {
+   
 }
 
 

@@ -12,9 +12,9 @@
 #include "Manager.h"
 
 
-Manager::Manager(int PIN)
+Manager::Manager(int newPIN)
 {
-   
+   PIN = newPIN;
 }
 
 

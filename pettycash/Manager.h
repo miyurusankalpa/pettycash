@@ -12,9 +12,9 @@
 class Manager
 {
 private:
-	
+	//
 public:
-	Manager();
+	Manager(int PIN);
 	~Manager();
 };
 

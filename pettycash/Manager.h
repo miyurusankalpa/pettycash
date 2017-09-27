@@ -12,7 +12,7 @@
 class Manager
 {
 private:
-	//
+	int PIN;
 public:
 	Manager(int PIN);
 	~Manager();

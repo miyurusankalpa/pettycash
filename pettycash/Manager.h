@@ -13,6 +13,8 @@ class Manager:public User
 {
 public:
 	Manager();
+	void:viewMonthlyReports();
+	void:viewRemainingFunds();
 	~Manager();
 };
 

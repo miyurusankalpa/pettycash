@@ -9,6 +9,13 @@ User::User(int userPIN, stirng username)
   name = username;
 }
 
+User::changePIN(int oldPIN, int newPIN)
+{
+  if (PIN == oldPIN)
+  {
+    PIN = newPIN;
+  }
+}
 
 User::~User()
 {

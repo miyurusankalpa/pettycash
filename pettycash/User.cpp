@@ -3,8 +3,10 @@
 
 //the inhertiance class for users
 
-User::User()
+User::User(int userPIN, stirng username)
 {
+  PIN = userPIN;
+  name = username;
 }
 
 

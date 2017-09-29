@@ -4,6 +4,8 @@
 #include "stdafx.h"
 #include "fund.h"
 #include "Account.h"
+#include "User.h"
+
 #include <iostream>
 
 using namespace std;

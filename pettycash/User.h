@@ -6,10 +6,10 @@
 class User
 {
 protected:
-	int userPIN;
-	string username;
+	int PIN;
+	string name;
 public:
 	User();
-	User(int PIN, string username);
+	User(int userPIN, string username);
 	~User();
 };

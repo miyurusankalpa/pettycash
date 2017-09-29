@@ -9,12 +9,10 @@
    Change login PIN.	   |			*/
 
 #pragma once
-class Manager
+class Manager:public User
 {
-private:
-	int PIN;
 public:
-	Manager(int PIN);
+	Manager();
 	~Manager();
 };
 

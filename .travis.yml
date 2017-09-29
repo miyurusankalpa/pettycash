@@ -3,4 +3,4 @@ compiler: g++
 before_install: cd pettycash
 script: 
 - find *.cpp -type f -exec sed -i '/#include "stdafx.h"/d;'  {} \;
-- g++ pettycash.cpp Account.cpp PettyCashier.cpp Staff.cpp Manager.cpp  Administrator.cpp fund.cpp 
+- g++ pettycash.cpp Account.cpp PettyCashier.cpp Staff.cpp Manager.cpp  Administrator.cpp User.cpp fund.cpp 

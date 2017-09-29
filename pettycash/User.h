@@ -3,7 +3,7 @@
 class User
 {
 protected:
-	int userPIN;
+	int PIN;
 	string username;
 public:
 	User();

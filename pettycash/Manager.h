@@ -1,3 +1,4 @@
+#pragma once
 // Manager.h
 // 27-09-2017
 /* Name: Manager
@@ -8,13 +9,13 @@
    View remaining funds.   |	Staff
    Change login PIN.	   |			*/
 
-#pragma once
-class Manager:public User
+class Manager
 {
+private:
+	int PIN;
 public:
-	Manager();
-	void:viewMonthlyReports();
-	void:viewRemainingFunds();
+	Manager(int newPIN);
+	void viewMonthlyReport();
+	void viewRemainingFunds();
 	~Manager();
 };
-

@@ -7,7 +7,7 @@ private:
 	int accountPin;
 public:
 	Account(int acno, int accountPin);
-	void AddtoFund(int amt);
+	void AddtoAccount(int amt);
 	void Withdaraw(int amt);
 	void printbal();
 	~Account();

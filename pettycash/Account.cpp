@@ -12,9 +12,8 @@ Account::Account(int acno,int accountPin)
 	accountPin = 1234;
 }
 
-
 void Account::AddtoAccount(int amt) {
-	accountID = accountBal + amt;
+	accountBal = accountBal + amt;
 }
 
 void Account::Withdaraw(int amt) {

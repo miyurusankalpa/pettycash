@@ -56,7 +56,7 @@ int main()
 
 	Account Account1(1,1234);
 
-	Account1.AddtoFund(1000);
+	Account1.AddtoAccount(1000);
 	Account1.Withdaraw(500);
 
 	Account1.printbal();

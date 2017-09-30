@@ -10,5 +10,6 @@ protected:
 public:
 	User();
 	User(int PIN, string name);
+	void changePIN(int oldPIN, int newPIN);
 	~User();
 };

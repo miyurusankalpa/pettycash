@@ -9,22 +9,24 @@
    Change login PIN.       |                    */
 
 #include "stdafx.h"
-#inlclude <iostream>
 #include "Manager.h"
+#include <iostream>
+
+using namespace std;
 
 Manager::Manager(int newPIN)
 {
    PIN = newPIN;
 }
 
-Manager::viewMonthlyReport()
+void Manager::viewMonthlyReport()
 {
    cout<<"~~~ Monthly Report ~~~\n"<<endl;
 }
 
-Manager::viewRemainingFunds()
+void Manager::viewRemainingFunds()
 {
-   cout<<"Remaining funds: Rs. "<<account.funds<<endl;
+   cout<<"Remaining funds: Rs. "<<endl;
 }
 
 Manager::~Manager()

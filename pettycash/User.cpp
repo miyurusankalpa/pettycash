@@ -9,7 +9,7 @@ User::User(int userPIN, string username)
   name = username;
 }
 
-User::changePIN(int oldPIN, int newPIN)
+void User::changePIN(int oldPIN, int newPIN)
 {
   if (PIN == oldPIN)
   {

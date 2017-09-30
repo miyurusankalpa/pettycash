@@ -2,7 +2,6 @@
 //
 
 #include "stdafx.h"
-#include "fund.h"
 #include "Account.h"
 #include "User.h"
 
@@ -55,12 +54,12 @@ int main()
 	}
 
 
-	fund fund1;
+	Account Account1(1,1234);
 
-	fund1.AddtoFund(1000);
-	fund1.Withdaraw(500);
+	Account1.AddtoFund(1000);
+	Account1.Withdaraw(500);
 
-	fund1.printbal();
+	Account1.printbal();
 
 	int d;
 	cin >> d;

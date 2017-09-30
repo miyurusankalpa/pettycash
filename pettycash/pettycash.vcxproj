@@ -148,7 +148,6 @@
   <ItemGroup>
     <ClInclude Include="Account.h" />
     <ClInclude Include="Administrator.h" />
-    <ClInclude Include="fund.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="PettyCashier.h" />
     <ClInclude Include="Staff.h" />
@@ -159,7 +158,6 @@
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
     <ClCompile Include="Administrator.cpp" />
-    <ClCompile Include="fund.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="pettycash.cpp" />
     <ClCompile Include="PettyCashier.cpp" />

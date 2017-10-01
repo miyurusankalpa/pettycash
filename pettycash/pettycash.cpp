@@ -42,7 +42,6 @@ int main()
 	}
 
 	if (userVar == 1) {
-
 		cout << "Please enter your account No" << endl;
 		int acNo;
 		cin >> acNo;
@@ -51,15 +50,21 @@ int main()
 		int acPIN;
 		cin >> acPIN;
 
+		//in a noraml situation this is where the accounts are taken from a database
+		Account Account1(1, 1234);
+
+		if (Account1.verifyPIN(acPIN) == 1)
+		{
+			Account1.AddtoAccount(1000);
+			Account1.Withdaraw(500);
+
+			Account1.printbal();
+		}
+		else {
+			cout << "Invalid PIN" << endl;
+		}
 	}
 
-
-	Account Account1(1,1234);
-
-	Account1.AddtoAccount(1000);
-	Account1.Withdaraw(500);
-
-	Account1.printbal();
 
 	int d;
 	cin >> d;

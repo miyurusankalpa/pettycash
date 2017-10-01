@@ -1,6 +1,8 @@
 #pragma once
-class Staff
+class Staff : public User
 {
+Private:
+	
 public:
 	Staff();
 	~Staff();

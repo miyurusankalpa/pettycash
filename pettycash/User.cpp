@@ -3,6 +3,10 @@
 
 //the inhertiance class for users
 
+User::User(void)
+{
+}
+
 User::User(int userPIN, string username)
 {
   PIN = userPIN;

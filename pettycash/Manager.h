@@ -9,7 +9,9 @@
    View remaining funds.   |	Staff
    Change login PIN.	   |			*/
 
-class Manager
+#include "User.h"
+
+class Manager : public User
 {
 private:
 	int PIN;

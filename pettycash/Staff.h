@@ -1,7 +1,10 @@
 #pragma once
+
+#include "User.h"
+
 class Staff : public User
 {
-Private:
+private:
 	
 public:
 	Staff();

@@ -1,5 +1,4 @@
 #pragma once
-
 #include "User.h"
 
 class Staff : public User
@@ -9,13 +8,12 @@ private:
 	string name;
 	float balance;
 	float limits;
-	
 public:
 	Staff();
-	void changePIN(int oldPIN, int newPIN);
-	void setLimit( float limit );
-	void changeBal( float req );
-	void viewBal( void );
+	Staff(string sname);
+	void setLimit(float limit);
+	void changeBal(float req);
+	void viewBal(void);
 	~Staff();
 };
 

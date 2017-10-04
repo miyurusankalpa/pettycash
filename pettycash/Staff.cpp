@@ -1,32 +1,37 @@
 #include "stdafx.h"
 #include "Staff.h"
+#include <iostream>
 
+using namespace std;
 
 Staff::Staff()
 {
-  
 }
 
-void Staff::changePIN(int oldPIN, int newPIN)
+Staff::Staff(string sname)
 {
-  PIN = userPIN;
-  name = username;
-} 
-void setLimit( float limit )
-{
-  balance = limit;
-  limits = limit;
-}  
-void changeBal( float req )
-{
-  balance = balance - req
-  cout<<"Request Procceded"<<endl;
+	name = sname;
+	balance = 0;
 }
-void viewBal( void )
+
+void Staff::setLimit(float limit)
 {
-  cout<<"Limit   : "<< limits<<endl;
-  cout<<"Balance : "<< balance<<endl;
-} 
+	balance = limit;
+	limits = limit;
+}
+
+void Staff::changeBal(float req)
+{
+	balance = balance - req;
+	cout<<"Request Procceded"<<endl;
+}
+
+void Staff::viewBal(void)
+{
+  cout<<"Limit   : "<<limits<<endl;
+  cout<<"Balance : "<<balance <<endl;
+}
+
 Staff::~Staff()
 {
 }

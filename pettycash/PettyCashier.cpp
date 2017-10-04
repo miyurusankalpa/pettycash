@@ -9,17 +9,17 @@ PettyCashier::PettyCashier(int newPIN)
   PIN = newPIN;
 }
 
-void pettyCashier::withdrawPettyCash(int amount)
+void PettyCashier::withdrawPettyCash(int amount)
 {
   accBal = accBal - amount;   
 }
 
-void pettyCashier::retrieveAccReports()
+void PettyCashier::retrieveAccReports()
 {
   cout<<"**Account Usage Report**\n"<<endl;
 }
 
-void pettyCashier::setTransactions()
+void PettyCashier::setTransactions()
 {
   cout<<"**Transactions**\n"<<endl;
 }

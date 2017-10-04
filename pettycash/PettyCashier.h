@@ -1,14 +1,15 @@
 #pragma once
-class PettyCashier
+#include "User.h"
+
+class PettyCashier : public User
 {
 private:
 	int PIN;
-	int accBal:
+	int accBal;
 public:
 	PettyCashier(int nw_pin);
 	void withdrawPettyCash(int amount);
 	void retrieveAccReports();
-	void setYransactions();
+	void setTransactions();
 	~PettyCashier();
 };
-

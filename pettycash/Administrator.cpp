@@ -1,29 +1,33 @@
 #include "StdAfx.h"
 #include "Administrator.h"
 
-
 Administrator::Administrator(void)
 {
 }
-Administrator::Administrator(char pAdmin_ID[10],char pAcc_Pin[10],char pUser_Name[50],char pUser_Id[10],char pUser_Pin[10])
+
+Administrator::Administrator(int pAdmin_ID, int pAcc_Pin, char pUser_Name[50], int pUser_Id, int pUser_Pin)
 {
-	Admin_ID[10] = pAdmin_ID[10];
-	Acc_Pin[10] = pAcc_Pin[10];
+	Admin_ID = pAdmin_ID;
+	Acc_Pin = pAcc_Pin;
 	User_Name[50] = pUser_Name[50];
-	User_Id[10] = pUser_Id[10];
-	User_Pin[10] = pUser_Pin[10];
+	User_Id = pUser_Id;
+	User_Pin = pUser_Pin;
 }
-void Administrator::SetAccountPin(char pin[10])
+
+void Administrator::SetAccountPin(int pin)
 {
-	pin[10] = Acc_Pin[10];
+	pin = Acc_Pin;
 }
+
 void Administrator::AddUser()
 {
 
 }
+
 void Administrator::RemoveUser()
 {
 }
+
 Administrator::~Administrator(void)
 {
 }

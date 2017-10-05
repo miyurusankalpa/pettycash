@@ -2,18 +2,15 @@
 class Administrator
 {
 private:
-
-	char Admin_ID[10];
-	char Acc_Pin[10];
+	int Admin_ID;
+	int Acc_Pin;
 	char User_Name[50];
-	char User_Id[10];
-	char User_Pin[10];
-
+	int User_Id;
+	int User_Pin;
 public:
-
 	Administrator();
-	Administrator(char pAdmin_ID[10],char pAcc_Pin[10],char pUser_Name[50],char pUser_Id[10],char pUser_Pin[10]);
-	void SetAccountPin();
+	Administrator(int pAdmin_ID,int pAcc_Pin,char pUser_Name[50], int pUser_Id, int pUser_Pin);
+	void SetAccountPin(int pin);
 	void AddUser();
 	void RemoveUser();
 	~Administrator(void);

@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Account.h"
 #include "User.h"
+#include "PettyCashier.h"
 
 #include <iostream>
 
@@ -28,11 +29,11 @@ int main()
 		break;
 		}
 	case 3: {
-		cout << "Logged in as Petty Cashier" << endl;
+		cout << "Logged in as Manager" << endl;
 		break;
 	}
 	case 4: {
-		cout << "Logged in as Petty Cashier" << endl;
+		cout << "Logged in as Admin" << endl;
 		break;
 	}
 	default: {
@@ -51,7 +52,7 @@ int main()
 		cin >> acPIN;
 
 		//in a noraml situation this is where the accounts are taken from a database
-		Account Account1(1, 1234);
+		Account Account1(acNo, 1234);
 
 		if (Account1.verifyPIN(acPIN) == 1)
 		{
@@ -65,6 +66,24 @@ int main()
 		}
 	}
 
+	//testing user cases 8, with the help of inhertance
+	if (userVar == 2) {
+		//inizialze petty casheir with a pin 1234
+		PettyCashier PettyCashier1(1234);
+
+		cout << "Please enter your account old PIN" << endl;
+		int oldPIN;
+		cin >> oldPIN;
+
+		cout << "Please enter your account new PIN" << endl;
+		int newPIN;
+		cin >> newPIN;
+
+		PettyCashier1.changePIN(oldPIN, newPIN);
+
+		cout << PettyCashier1.verifyPIN(oldPIN) << endl;
+		cout << PettyCashier1.verifyPIN(newPIN) << endl;
+	}
 
 	int d;
 	cin >> d;

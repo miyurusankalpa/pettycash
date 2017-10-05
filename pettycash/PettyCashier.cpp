@@ -4,7 +4,7 @@
 
 using namespace std;
 
-PettyCashier::PettyCashier(int newPIN)
+PettyCashier::PettyCashier(int newPIN):User(newPIN, "test")
 {
   PIN = newPIN;
 }

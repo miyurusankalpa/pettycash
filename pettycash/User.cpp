@@ -21,6 +21,17 @@ void User::changePIN(int oldPIN, int newPIN)
   }
 }
 
+int User::verifyPIN(int uPIN)
+{
+	if (PIN == uPIN)
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
 User::~User()
 {
 }

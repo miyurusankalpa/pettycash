@@ -5,11 +5,13 @@ using namespace std;
 class User
 {
 protected:
+	int uid;
 	int PIN;
 	string name;
 public:
 	User(void);
 	User(int PIN, string name);
-	void changePIN(int oldPIN, int newPIN);
+	virtual void changePIN(int oldPIN, int newPIN);
+	virtual int verifyPIN(int uPIN);
 	~User();
 };

@@ -5,12 +5,10 @@ class Staff : public User
 {
 private:
 	int PIN;
-	string name;
 	float balance;
 	float limits;
 public:
-	Staff();
-	Staff(string sname);
+	Staff(int newPIN);
 	void setLimit(float limit);
 	void changeBal(float req);
 	void viewBal(void);

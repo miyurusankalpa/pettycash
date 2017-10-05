@@ -1,16 +1,25 @@
 #include "stdafx.h"
 #include "User.h"
 
+#include <iostream>
+
+using namespace std;
+
 //the inhertiance class for users
 
 User::User(void)
 {
 }
 
-User::User(int userPIN, string username)
+User::User(int userPIN)
 {
   PIN = userPIN;
-  name = username;
+}
+
+void User::adduUsername(string uname)
+{
+	name = uname;
+	cout << "Added username " << name << " to the user" << endl;
 }
 
 void User::changePIN(int oldPIN, int newPIN)

@@ -4,13 +4,8 @@
 
 using namespace std;
 
-Staff::Staff()
+Staff::Staff(int newPIN) : User(newPIN)
 {
-}
-
-Staff::Staff(string sname)
-{
-	name = sname;
 	balance = 0;
 }
 

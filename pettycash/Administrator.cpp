@@ -1,5 +1,9 @@
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "Administrator.h"
+
+#include <iostream>
+
+using namespace std;
 
 Administrator::Administrator(void)
 {
@@ -21,11 +25,12 @@ void Administrator::SetAccountPin(int pin)
 
 void Administrator::AddUser()
 {
-
+	cout << "**Add User**\n" << endl;
 }
 
 void Administrator::RemoveUser()
 {
+	cout << "**Remove User**\n" << endl;
 }
 
 Administrator::~Administrator(void)

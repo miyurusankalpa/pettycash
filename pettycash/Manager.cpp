@@ -14,7 +14,7 @@
 
 using namespace std;
 
-Manager::Manager(int newPIN)
+Manager::Manager(int newPIN) : User(newPIN)
 {
    PIN = newPIN;
 }

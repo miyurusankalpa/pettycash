@@ -1,18 +1,17 @@
 #pragma once
+#include "Staff.h"
+
 class Administrator
 {
 private:
 	int Admin_ID;
 	int Acc_Pin;
-	char User_Name[50];
-	int User_Id;
-	int User_Pin;
+	Staff *users[5];
 public:
-	Administrator();
-	Administrator(int pAdmin_ID,int pAcc_Pin,char pUser_Name[50], int pUser_Id, int pUser_Pin);
+	Administrator(int pAdmin_ID,int pAcc_Pin);
 	void SetAccountPin(int pin);
-	void AddUser();
-	void RemoveUser();
+	void AddUser(int uid);
+	void RemoveUser(int uid);
 	~Administrator(void);
 };
 

@@ -5,6 +5,9 @@
 #include "Account.h"
 #include "User.h"
 #include "PettyCashier.h"
+#include "Administrator.h"
+#include "Staff.h"
+#include "Manager.h"
 
 #include <iostream>
 
@@ -47,27 +50,27 @@ int main()
 		}
 
 		if (userVar == 1) {
-			cout << "Please enter your account No" << endl;
-			int acNo;
-			cin >> acNo;
+			//create a test staff user
+			Staff Staff1(1234);
 
-			cout << "Please enter your account PIN" << endl;
+			cout << "Please enter your login PIN" << endl;
 			int acPIN;
 			cin >> acPIN;
 
-			//in a noraml situation this is where the accounts are taken from a database
-			Account Account1(acNo, 1234);
-
-			if (Account1.verifyPIN(acPIN) == 1)
+			//login in
+			if (Staff1.verifyPIN(acPIN) == 1)
 			{
-				Account1.AddtoAccount(1000);
-				Account1.Withdaraw(500);
+				Staff1.changeBal(500);
 
-				Account1.printbal();
+				Staff1.viewBal();
 			}
 			else {
 				cout << "Invalid PIN" << endl;
 			}
+
+			/*cout << "Please enter your account No" << endl;
+			int acNo;
+			cin >> acNo;*/
 		}
 
 		//testing user cases 8, with the help of inhertance
@@ -89,9 +92,23 @@ int main()
 			cout << PettyCashier1.verifyPIN(newPIN) << endl;
 		}
 
+		if (userVar == 3) {
+			Manager Manager1(1234);
+		}
+
+		if (userVar == 4) {
+			//inizialze New Admin
+			Administrator Administrator1(1,2222);
+
+			//create staff account
+			Administrator1.AddUser(1);
+			//Administrator1.RemoveUser(1);
+		}
+
 		cout << "Enter 0 to exit, 1 to continue : ";
 		cin >> d;
 	}
+
 
 	cout << "Exiting..";
     return 0;

@@ -6,7 +6,7 @@ using namespace std;
 
 Staff::Staff(int newPIN) : User(newPIN)
 {
-	balance = 0;
+	accounts[1] = new Account(1, newPIN);
 }
 
 void Staff::setLimit(float limit)
@@ -17,14 +17,15 @@ void Staff::setLimit(float limit)
 
 void Staff::changeBal(float req)
 {
-	balance = balance - req;
-	cout<<"Request Procceded"<<endl;
+	accounts[1]->Withdaraw(req);
+	cout << "Request Procceded" << endl; 
 }
 
 void Staff::viewBal(void)
 {
-  cout<<"Limit   : "<<limits<<endl;
-  cout<<"Balance : "<<balance <<endl;
+
+	cout << "Balance : ";
+	accounts[1]->printbal();
 }
 
 Staff::~Staff()

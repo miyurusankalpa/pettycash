@@ -5,17 +5,11 @@
 
 using namespace std;
 
-Administrator::Administrator(void)
-{
-}
 
-Administrator::Administrator(int pAdmin_ID, int pAcc_Pin, char pUser_Name[50], int pUser_Id, int pUser_Pin)
+Administrator::Administrator(int pAdmin_ID, int pAcc_Pin)
 {
 	Admin_ID = pAdmin_ID;
 	Acc_Pin = pAcc_Pin;
-	User_Name[50] = pUser_Name[50];
-	User_Id = pUser_Id;
-	User_Pin = pUser_Pin;
 }
 
 void Administrator::SetAccountPin(int pin)
@@ -23,13 +17,15 @@ void Administrator::SetAccountPin(int pin)
 	pin = Acc_Pin;
 }
 
-void Administrator::AddUser()
+void Administrator::AddUser(int uid)
 {
-	cout << "**Add User**\n" << endl;
+	users[uid] = new Staff(uid);
+	cout << "**Added User**\n" << endl;
 }
 
-void Administrator::RemoveUser()
+void Administrator::RemoveUser(int uid)
 {
+	delete users[uid];
 	cout << "**Remove User**\n" << endl;
 }
 

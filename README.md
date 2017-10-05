@@ -12,6 +12,7 @@ The five classes should be named as follows
 * Staff
 * Manager
 * Administrator
+* User
 
 # If using a version below Visual Studio 2017
 

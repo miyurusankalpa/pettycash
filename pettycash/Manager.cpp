@@ -17,11 +17,12 @@ using namespace std;
 Manager::Manager(int newPIN) : User(newPIN)
 {
    PIN = newPIN;
+   accounts[1] = new Account(1, newPIN);
 }
 
 void Manager::viewMonthlyReport()
 {
-   cout<<"~~~ Monthly Report ~~~\n"<<endl;
+   cout<<"~~~ Monthly Report ~~~\n"<< accounts[1]->viewBalance() << endl;
 }
 
 void Manager::viewRemainingFunds()

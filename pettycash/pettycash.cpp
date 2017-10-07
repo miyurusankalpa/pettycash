@@ -64,7 +64,8 @@ int main()
 
 				Staff1.viewBal();
 			}
-			else {
+			else 
+			{
 				cout << "Invalid PIN" << endl;
 			}
 
@@ -94,6 +95,8 @@ int main()
 
 		if (userVar == 3) {
 			Manager Manager1(1234);
+
+			Manager1.viewMonthlyReport();
 		}
 
 		if (userVar == 4) {

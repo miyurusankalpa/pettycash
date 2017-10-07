@@ -8,7 +8,7 @@ using namespace std;
 Account::Account(int acno,int acPin)
 {
 	accountID = acno;
-	accountBal = 0;
+	accountBal = 0.0;
 	accountPin = acPin;
 }
 
@@ -20,8 +20,8 @@ void Account::Withdaraw(int amt) {
 	accountBal = accountBal - amt;
 }
 
-void Account::printbal() {
-	cout << "Current Balance : " << accountBal << endl;
+float Account::viewBalance() {
+	return accountBal;
 }
 
 void Account::changePIN(int oldPIN, int newPIN)

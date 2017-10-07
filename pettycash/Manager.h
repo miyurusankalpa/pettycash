@@ -10,11 +10,13 @@
    Change login PIN.	   |			*/
 
 #include "User.h"
+#include "Account.h"
 
 class Manager : public User
 {
 private:
 	int PIN;
+	Account *accounts[5];
 public:
 	Manager(int newPIN);
 	void viewMonthlyReport();

@@ -25,7 +25,7 @@ void Staff::viewBal(void)
 {
 
 	cout << "Balance : ";
-	accounts[1]->printbal();
+	accounts[1]->viewBalance();
 }
 
 Staff::~Staff()

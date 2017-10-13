@@ -104,7 +104,9 @@ int main()
 			Administrator Administrator1(1,2222);
 
 			//create staff account
-			Administrator1.AddUser(1);
+			Staff Staff1(1234);
+
+			Administrator1.AddUser(Staff1);
 			//Administrator1.RemoveUser(1);
 		}
 

@@ -10,7 +10,7 @@ private:
 public:
 	Administrator(int pAdmin_ID,int pAcc_Pin);
 	void SetAccountPin(int pin);
-	void AddUser(int uid);
+	void AddUser(Staff user);
 	void RemoveUser(int uid);
 	~Administrator(void);
 };

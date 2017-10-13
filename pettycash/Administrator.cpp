@@ -17,9 +17,8 @@ void Administrator::SetAccountPin(int pin)
 	pin = Acc_Pin;
 }
 
-void Administrator::AddUser(int uid)
+void Administrator::AddUser(Staff user)
 {
-	users[uid] = new Staff(uid);
 	cout << "**Added User**\n" << endl;
 }
 

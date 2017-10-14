@@ -9,11 +9,6 @@ PettyCashier::PettyCashier(int newPIN): User(newPIN)
   PIN = newPIN;
 }
 
-void PettyCashier::withdrawPettyCash(int amount)
-{
-  accBal = accBal - amount;   
-}
-
 void PettyCashier::retrieveAccReports()
 {
   cout<<"**Account Usage Report**\n"<<endl;

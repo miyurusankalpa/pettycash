@@ -15,7 +15,7 @@
 class Manager : public User
 {
 private:
-	Account *accounts[5];
+	Account *accounts;
 public:
 	Manager(int newPIN);
 	void viewMonthlyReport();

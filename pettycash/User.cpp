@@ -16,7 +16,7 @@ User::User(int userPIN)
   PIN = userPIN;
 }
 
-void User::adduUsername(string uname)
+void User::addUsername(string uname)
 {
 	name = uname;
 	cout << "Added username " << name << " to the user" << endl;

@@ -5,14 +5,12 @@
 
 using namespace std;
 
-Account::Account(int acno,int acPin)
+Account::Account(double bal)
 {
-	accountID = acno;
-	accountBal = 0.0;
-	accountPin = acPin;
+	accountBal = bal;
 }
 
-void Account::AddtoAccount(int amt) {
+void Account::Deposit(int amt) {
 	accountBal = accountBal + amt;
 }
 
@@ -23,7 +21,7 @@ void Account::Withdaraw(int amt) {
 float Account::viewBalance() {
 	return accountBal;
 }
-
+/*
 void Account::changePIN(int oldPIN, int newPIN)
 {
 	if (accountPin == oldPIN)
@@ -43,7 +41,7 @@ int Account::verifyPIN(int PIN)
 		return 0;
 	}
 }
-
+*/
 Account::~Account()
 {
 }

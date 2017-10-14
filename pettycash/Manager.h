@@ -21,5 +21,6 @@ public:
 	Manager(int newPIN);
 	void viewMonthlyReport();
 	void viewRemainingFunds();
+	// Function changeUserPIN inherited from User class.
 	~Manager();
 };

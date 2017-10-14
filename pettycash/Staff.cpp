@@ -13,7 +13,7 @@ void Staff::setLimit(float limit)
 	withdrawLimit = limit;
 }
 
-int Staff::withdaw_al(double amt, Account accounts) {
+int Staff::Withdraw(double amt, Account accounts) {
 	if (withdrawLimit > amt) { // Ensure account balance remain positive.
 		accounts.Withdaraw(amt);
 		return 0; // Acknowlege successful execution.

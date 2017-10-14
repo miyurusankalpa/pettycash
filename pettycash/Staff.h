@@ -9,7 +9,7 @@ private:
 public:
 	Staff(int newPIN);
 	void setLimit(float limit);
-	int withdaw_al(double amt, Account accounts);
+	int Withdraw(double amt, Account accounts);
 	void viewBal(void);
 	~Staff();
 };

@@ -68,7 +68,7 @@ int main()
 				cout << "Invalid PIN" << endl;
 			}
 
-			Staff1.withdaw_al(100, Account_main);
+			Staff1.Withdraw(100, Account_main);
 
 
 			/*cout << "Please enter your account No" << endl;

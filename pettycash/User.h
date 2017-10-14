@@ -11,7 +11,7 @@ protected:
 public:
 	User(void);
 	User(int PIN);
-	virtual void adduUsername(string username);
+	virtual void addUsername(string username);
 	virtual void changePIN(int oldPIN, int newPIN);
 	virtual int verifyPIN(int uPIN);
 	~User();

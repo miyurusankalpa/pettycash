@@ -90,7 +90,7 @@ int main()
 			cin >> newPIN;
 
 			PettyCashier1.changePIN(oldPIN, newPIN);
-			PettyCashier1.Deposit(100);
+			PettyCashier1.addFunds(100);
 
 
 			cout << PettyCashier1.verifyPIN(oldPIN) << endl;

@@ -52,6 +52,7 @@ int main()
 		if (userVar == 1) {
 			//create a test staff user
 			Staff Staff1(1234);
+			Account Account_main(1000);
 
 			cout << "Please enter your login PIN" << endl;
 			int acPIN;
@@ -60,14 +61,15 @@ int main()
 			//login in
 			if (Staff1.verifyPIN(acPIN) == 1)
 			{
-				Staff1.changeBal(500);
-
 				Staff1.viewBal();
 			}
 			else 
 			{
 				cout << "Invalid PIN" << endl;
 			}
+
+			Staff1.withdaw_al(100, Account_main);
+
 
 			/*cout << "Please enter your account No" << endl;
 			int acNo;
@@ -88,7 +90,7 @@ int main()
 			cin >> newPIN;
 
 			PettyCashier1.changePIN(oldPIN, newPIN);
-			PettyCashier1.Withdaraw(100);
+			PettyCashier1.Deposit(100);
 
 
 			cout << PettyCashier1.verifyPIN(oldPIN) << endl;

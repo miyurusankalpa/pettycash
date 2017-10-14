@@ -6,20 +6,29 @@ using namespace std;
 
 Staff::Staff(int newPIN) : User(newPIN)
 {
-	accounts[1] = new Account(1, newPIN);
 }
 
 void Staff::setLimit(float limit)
 {
-	balance = limit;
-	limits = limit;
+	withdrawLimit = limit;
+}
+
+int Staff::withdaw_al(double amt, Account accounts) {
+	if (withdrawLimit > amt) { // Ensure account balance remain positive.
+		accounts->Withdaraw(amt);
+		return 0; // Acknowlege successful execution.
+	}
+	else {
+		return 1; // Acknowledge withdraw failure.
+	}
+
 }
 
 void Staff::viewBal(void)
 {
 
 	cout << "Balance : ";
-	accounts[1]->viewBalance();
+	//accounts[1]->viewBalance();
 }
 
 Staff::~Staff()

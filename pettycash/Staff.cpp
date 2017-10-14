@@ -15,12 +15,6 @@ void Staff::setLimit(float limit)
 	limits = limit;
 }
 
-void Staff::changeBal(float req)
-{
-	accounts[1]->Withdaraw(req);
-	cout << "Request Procceded" << endl; 
-}
-
 void Staff::viewBal(void)
 {
 

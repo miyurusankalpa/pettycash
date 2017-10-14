@@ -4,9 +4,7 @@
 
 using namespace std;
 
-Account::Account() {
-		cout << "New account opened" << endl;
-}
+Account::Account() {}
 
 Account::Account(double bal)
 {

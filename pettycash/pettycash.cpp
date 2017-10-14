@@ -88,6 +88,8 @@ int main()
 			cin >> newPIN;
 
 			PettyCashier1.changePIN(oldPIN, newPIN);
+			PettyCashier1.changePIN(oldPIN, newPIN);
+
 
 			cout << PettyCashier1.verifyPIN(oldPIN) << endl;
 			cout << PettyCashier1.verifyPIN(newPIN) << endl;

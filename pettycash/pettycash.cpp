@@ -88,7 +88,7 @@ int main()
 			cin >> newPIN;
 
 			PettyCashier1.changePIN(oldPIN, newPIN);
-			PettyCashier1.changePIN(oldPIN, newPIN);
+			PettyCashier1.Withdaraw(100);
 
 
 			cout << PettyCashier1.verifyPIN(oldPIN) << endl;

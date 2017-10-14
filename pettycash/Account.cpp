@@ -1,47 +1,38 @@
 #include "stdafx.h"
 #include "Account.h"
-
 #include <iostream>
 
 using namespace std;
 
+Account::Account() {
+		cout << "New account opened" << endl;
+}
+
 Account::Account(double bal)
 {
 	accountBal = bal;
+	cout << "New account opened" << endl;
 }
 
-void Account::Deposit(int amt) {
+void Account::Deposit(double amt) {
 	accountBal = accountBal + amt;
 }
 
-void Account::Withdaraw(int amt) {
-	accountBal = accountBal - amt;
+int Account::Withdaraw(double amt) {
+	if (accountBal > amt) { // Ensure account balance remain positive.
+		accountBal = accountBal - amt;
+		return 0; // Acknowlege successful execution.
+	} else {
+		return 1; // Acknowledge withdraw failure.
+	}
+		
 }
 
-float Account::viewBalance() {
+double Account::viewBalance() {
 	return accountBal;
 }
-/*
-void Account::changePIN(int oldPIN, int newPIN)
-{
-	if (accountPin == oldPIN)
-	{
-		accountPin = newPIN;
-	}
-}
 
-int Account::verifyPIN(int PIN)
-{
-	if (accountPin == PIN)
-	{
-		return 1;
-	}
-	else 
-	{
-		return 0;
-	}
-}
-*/
 Account::~Account()
 {
+	cout << "Account closed" << endl;
 }

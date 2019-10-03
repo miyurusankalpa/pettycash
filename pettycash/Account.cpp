@@ -13,7 +13,7 @@ Account::Account(double bal)
 }
 
 void Account::Deposit(double amt) {
-	accountBal = accountBal + amt;
+	accountBal = accountBal + amt; // calculation
 }
 
 int Account::Withdaraw(double amt) {
@@ -32,5 +32,5 @@ double Account::viewBalance() {
 
 Account::~Account()
 {
-	cout << "Account closed" << endl;
+	cout << "Account closed" << endl; // display
 }
